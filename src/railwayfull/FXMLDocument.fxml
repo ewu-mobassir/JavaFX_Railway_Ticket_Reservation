@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="203.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railwayfull.FXMLDocumentController">
+   <top>
+      <Label text="Welcome to Railway Ticket Reservation System" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="40.0" prefWidth="412.0">
+         <children>
+            <Button layoutX="229.0" layoutY="-2.0" mnemonicParsing="false" onAction="#exit_app" prefHeight="32.0" prefWidth="83.0" text="EXIT" textFill="#5e0303" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="94.0" layoutY="-2.0" mnemonicParsing="false" onAction="#openLog" prefHeight="32.0" prefWidth="74.0" text="Show Log" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="105.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="23.0" layoutY="37.0" prefHeight="76.0" prefWidth="355.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#BookTicketMenu" prefHeight="54.0" prefWidth="107.0" text="Book Ticket" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="161.0" layoutY="35.0" mnemonicParsing="false" onAction="#addStationMrnu" prefHeight="54.0" prefWidth="107.0" text="Add Station" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="25.0" layoutY="35.0" mnemonicParsing="false" onAction="#addTrainMenu" prefHeight="54.0" prefWidth="107.0" text="Add Train" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <Label layoutX="85.0" layoutY="20.0" text="SELECT THE FUNCTION YOU WANT TO USE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
